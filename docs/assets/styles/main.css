@@ -1,0 +1,51 @@
+@import './global-styles.css';
+@import './header.css';
+@import './footer.css';
+
+.main {
+    display: flex;
+    padding: 10px 100px;
+    background-color: rgba(255, 255, 255, 0.425);
+}
+.main__content {
+    color: rgb(0, 0, 0);
+    text-align: justify;
+}
+.main__link {
+    color: rgb(0, 0, 0);
+}
+
+.main h1,.main h2,.main h3,.main h4,.main h5,.main h6 {
+    text-align: left;
+}
+
+#content {
+    width: 100%;
+}
+
+.video {
+    margin: 0 auto;
+    width: 70%;
+    align-content: center;
+    border: solid;
+}
+.video__iframe {
+    border: none;
+    border-radius: 25px;
+}
+
+.wait {
+    padding: 5px !important;
+    color: rgba(255, 255, 255, 0.425) !important;
+}
+.normal {
+    padding: 10px 100px !important;
+    color: rgb(0, 0, 0) !important;
+
+}
+.waitc {
+    display: none !important;
+}
+.normalc {
+    display: block;
+}

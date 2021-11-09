@@ -1,0 +1,36 @@
+.footer {
+	background-color: rgba(0, 0, 0, 0.548);
+	padding: 10px;
+	border-radius: 0 0 25px 25px;
+    text-align: center;
+}
+.footer__container {
+    display: grid;
+    grid-template-columns: 49.5% 1% 49.5%;
+    padding: 10px;
+}
+.footer__contdiv {
+    margin: 5px 20px;
+    opacity: 150%;
+}
+.contacts ul {
+    list-style: none;
+    padding: 5px;
+}
+.contacts__link {
+    margin: 10px 0;
+}
+.contacts__link a {
+    color: #fff;
+    display: inline-block;
+    margin-left: 5px;
+}
+.other1 {
+    border-left: 1px solid #fff;
+    width: 0px;
+    margin: 0 auto;
+}
+.copy {
+    border-top: 1px solid #fff;
+    padding: 20px 0;
+}

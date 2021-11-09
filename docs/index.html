@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg></script>
+    <script src="./assets/scripts/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="granddiv">
+        <header class="header">
+            <!--<figure class="header__image">
+                <img src="./assets/img/photo.jpg" alt="profile_picture">
+            </figure>-->
+            <h1 class="header__name">Tecnología - Grado 5°</h1>
+            <nav class="header__buttons">
+                    <!-- <a href="./pages/main.html">inicio</a> -->
+                    <button id="index" class="header__button" onclick="index()">Inicio</button>
+                    <button id="class1" class="header__button" onclick="class1()">Clase 1</button>
+                    <button id="class2" class="header__button" onclick="class2()">Clase 2</button>
+                    <button id="class3" class="header__button" onclick="class3()">Clase 3</button>
+            </nav>
+        </header>
+    
+        <main class="main">
+            <div id="content" class="main__content">
+                <div id="guts">
+
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('.main__content').load('./pages/main.html');
+                        $('#index').addClass('active');
+                        var year = (new Date).getFullYear();
+                        $("#year").text(year);
+                    });
+                </script>
+
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__contdiv contacts">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li class="contacts__link"><i class="fas fa-phone-alt"></i><a
+                                href="tel:+57">300-8212386</a></li>
+                        <li class="contacts__link"><i class="fas fa-envelope"></i><a
+                                href="mailto:">Correo</a></li>
+                    </ul>
+                </div>
+                <div class="other1"></div>
+                <div class="footer__contdiv other2">
+                    <h2>Creación</h2>
+                    <p>
+                        Página diseñada y ejecutada por Sergio Muñoz Marín y Miguel Ángel Zapata Roa como tarea para el área de tecnología e informática
+                    </p>
+                </div>
+            </div>
+            <p class="copy">Copyright &copy; <span id="year"></span><br>Sergio Muñoz Marín y Miguel Ángel Zapata Roa</p>
+        </footer>
+    </div>
+</body>
+</html>
